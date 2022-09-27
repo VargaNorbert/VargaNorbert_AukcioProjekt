@@ -104,10 +104,10 @@ public class Festmeny {
     @Override
     public String toString() {
         return String.format("%s: %s (%s)\n"+
-                "%s\n"+
+                "%s"+
                 "%d $ - %s (összesen: %d db\n)"
                 ,this.festo,this.cim,this.stilus,
-                this.elkelt ? "elkelt":"nem kelt el",
+                this.elkelt ? "elkelt\n":"",
                 this.legmagasabbLicit,this.legutolsoLicitIdeje.format(formatum),this.licitekSzama
         );
     }
